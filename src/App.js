@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "assets/scss/style.scss";
+import LandingPage from "pages/LandingPage";
+import { BrowserRouter as Router, Route } from "react-router-dom"; //shortcut buat import react router dom => imrr
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <p>HAHAHAHAHAHAHA</p>
+      </div>
+      <Router>
+        <Route path="/" Component={LandingPage}></Route>
+      </Router>
     </div>
   );
 }
